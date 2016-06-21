@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>CSS Background Animation</title>
+        <style>
+
+            ul{list-style:none;}
+            li{float:left; margin:0 2% 0 0; width:10%;}
+            div.notification {
+                width: 70%;
+                height: 50px;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 7px 0;
+                color: #fff;
+                border-radius: 28px;
+
+            }
+
+            .notification_success{background-color: #6a7168;
+                                  animation: colorChageSuccess 4s linear infinite;
+                                  -webkitanimation: colorChageSuccess 4s linear infinite;}
+            @-webkit-keyframes colorChageSuccess {
+                0% {
+                    background-color: #6a7168;
+                }
+                50% {
+                    background-color: #37bd08;
+                }
+                100% {
+                    background-color: #6a7168;
+                }
+            }
+            @keyframes colorChageSuccess {
+                0% {
+                    background-color: #6a7168;
+                }
+                50% {
+                    background-color: #37bd08;
+                }
+                100% {
+                    background-color: #6a7168;
+                }
+            }
+
+
+            .notification_alert{background-color: #ec2424;
+                                animation: colorChageAlert 4s linear infinite;
+                                -webkitanimation: colorChageAlert 4s linear infinite;}
+            @-webkit-keyframes colorChageAlert {
+                0% {
+                    background-color: #ec2424;
+                }
+                50% {
+                    background-color: #37bd08;
+                }
+                100% {
+                    background-color: #ec2424;
+                }
+            }
+            @keyframes colorChageAlert {
+                0% {
+                    background-color: #ec2424;
+                }
+                50% {
+                    background-color: #37bd08;
+                }
+                100% {
+                    background-color: #ec2424;
+                }
+            }
+
+            .notification_warning{background-color: #ccba04;
+                                  animation: colorChageWarning 4s linear infinite;
+                                  -webkitanimation: colorChageWarning 4s linear infinite;}
+            @-webkit-keyframes colorChageWarning {
+                0% {
+                    background-color: #ccba04;
+                }
+                50% {
+                    background-color: #37bd08;
+                }
+                100% {
+                    background-color: #ccba04;
+                }
+            }
+            @keyframes colorChageWarning {
+                0% {
+                    background-color: #ccba04;
+                }
+                50% {
+                    background-color: #37bd08;
+                }
+                100% {
+                    background-color: #ccba04;
+                }
+            }
+
+            .notification_info{background-color: #2ce4ff;
+                               animation: colorChageInfo 4s linear infinite;
+                               -webkitanimation: colorChageInfo 4s linear infinite;}
+            @-webkit-keyframes colorChageInfo {
+                0% {
+                    background-color: #2ce4ff;
+                }
+                50% {
+                    background-color: #37bd08;
+                }
+                100% {
+                    background-color: #2ce4ff;
+                }
+            }
+            @keyframes colorChageInfo {
+                0% {
+                    background-color: #2ce4ff;
+                }
+                50% {
+                    background-color: #37bd08;
+                }
+                100% {
+                    background-color: #2ce4ff;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li>
+                <div class="notification notification_success">12<br />Success</div></li>
+            <li>
+                <div class="notification notification_alert">15<br />Alerts</div></li>
+            <li>
+                <div class="notification notification_warning">12<br />Warnings</div></li>
+            <li>
+                <div class="notification notification_info">12<br />Infos</div></li>
+        </ul>
+    </body>
+</html>
+
